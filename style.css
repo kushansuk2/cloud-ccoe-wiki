@@ -1,0 +1,554 @@
+/* body */
+body{
+    margin: 0;
+    padding: 0;
+    /* font-family: Georama, Poppins; */
+    font-family: 'Georama';
+}
+
+p, li, a, div{
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* Navbar styles */
+header {
+  background-color: #333;  /* Primary red */
+  color: #fff;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+/* Style the navbar links */
+nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  padding-right: 20px;  /* Increase padding for spacing */
+}
+
+.dropdown-toggle:after {
+  content: "";
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 8px solid #fff;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -2px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #333;  /* Primary red for dropdown menu */
+  color: #fff;
+  list-style: none;
+  padding: 20px 10px 10px 10px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  margin-bottom: 10px;
+}
+  
+  
+  /* Hero banner styles */
+  /* .hero-banner {
+    background-image: url('MDE_Logo.jpg');
+    background-size: cover;
+    object-fit: cover;
+    height: 500px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-banner h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+  }
+  
+  .hero-banner p {
+    font-size: 1.5em;
+  } */
+
+
+  /* for slider */
+  .whats-new {
+    position: relative;
+    height: 50px; /* Adjust height as needed */
+    overflow: hidden; /* Hide overflowing content */
+    margin-top: 20px; /* Adjust margin as needed */
+    background-color: #f5f5f5; /* Light gray background */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .whats-new span {
+    display: inline-block;
+    animation: scroll-text 20s linear infinite; /* Animation properties */
+    white-space: nowrap; /* Prevent text wrapping */
+    padding: 10px;
+  }
+  
+  @keyframes scroll-text {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-500%); } /* Adjust distance for full scroll */
+  }
+
+/* for corousel*/
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .carousel-card {
+    flex: 0 0 auto;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .carousel-card img {
+    width: 100%;
+    height: 450px;
+    display: block;
+  }
+
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+
+  .prev-button {
+    left: 10px;
+  }
+
+  .next-button {
+    right: 10px;
+  }
+
+
+
+
+  /* tabs */
+/* Container to wrap tabs and content */
+.container {
+  display: flex;
+  align-items: flex-start; /* Align items to the start of the container */
+  margin-top: 20px;
+}
+
+/* Tab container */
+.tab-container {
+  display: flex;
+  flex-direction: column; /* Display tabs vertically */
+  align-items: flex-start; /* Align tabs to the start of the container */
+  /* margin-right: 20px; Add margin to separate tabs from content */
+}
+
+/* Individual tab */
+.tab {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  /* border-bottom: none; Remove bottom border */
+  cursor: pointer;
+  height: 45px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.tab:hover {
+  background-color: #ddd;
+}
+
+/* Active tab */
+.active-tab {
+  background-color: #ccc;
+}
+
+/* Tab content */
+.tab-content {
+  display: none;
+  padding: 0 1rem;
+  height: 138px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-left: none;
+}
+
+/* Show active tab content */
+.tab-content.active {
+  padding: 0 1rem;
+  height: 138px;
+  width: 100%;
+  border-left: none;
+  display: block;
+}
+
+
+/* about use */
+
+.aboutus-container{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* testimoial */
+/* for corousel*/
+.carousel-containerzz {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-trackzz {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-cardzz {
+  flex: 0 0 auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-cardzz img {
+  width: 100%;
+  height: 200px;
+  display: block;
+}
+
+.carousel-buttonzz {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+
+.prev-buttonzz {
+  left: 10px;
+}
+
+.next-buttonzz {
+  right: 10px;
+}
+
+
+/* for cor testimonials */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.slider {
+  height: 25%;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.slider__nav {
+  width: 12px;
+  height: 12px;
+  margin: 2rem 12px;
+  border-radius: 50%;
+  z-index: 10;
+  outline: 6px solid #ccc;
+  outline-offset: -6px;
+  box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.slider__nav:checked {
+  -webkit-animation: check 0.4s linear forwards;
+          animation: check 0.4s linear forwards;
+}
+.slider__nav:checked:nth-of-type(1) ~ .slider__inner {
+  left: 0%;
+}
+.slider__nav:checked:nth-of-type(2) ~ .slider__inner {
+  left: -100%;
+}
+.slider__nav:checked:nth-of-type(3) ~ .slider__inner {
+  left: -200%;
+}
+.slider__nav:checked:nth-of-type(4) ~ .slider__inner {
+  left: -300%;
+}
+.slider__inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400%;
+  height: 100%;
+  -webkit-transition: left 0.4s;
+  transition: left 0.4s;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+.slider__contents {
+  height: 100%;
+  height: fit-content;
+  padding: 0rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.slider__image {
+  font-size: 2.7rem;
+  color: #2196F3;
+}
+.slider__caption {
+  font-weight: 500;
+  margin: 2rem 0 1rem;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  color: rgba(227, 24, 55, 1);
+}
+.slider__txt {
+  /* color: #999; */
+  margin-bottom: 3rem;
+  max-width: 300px;
+}
+
+@-webkit-keyframes check {
+  50% {
+    outline-color: #333;
+    box-shadow: 0 0 0 12px #333, 0 0 0 36px rgba(51, 51, 51, 0.2);
+  }
+  100% {
+    outline-color: #333;
+    box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
+  }
+}
+
+@keyframes check {
+  50% {
+    outline-color: #333;
+    box-shadow: 0 0 0 12px #333, 0 0 0 36px rgba(51, 51, 51, 0.2);
+  }
+  100% {
+    outline-color: #333;
+    box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
+  }
+}
+
+
+/* testing  */
+
+.gtco-testimonials {
+  position: relative;
+  margin-top: 30px;
+}
+
+/* .gtco-testimonials h2 {
+  font-size: 30px;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 50px;
+} */
+
+.gtco-testimonials .owl-stage-outer {
+  padding: 30px 0;
+}
+
+.gtco-testimonials .owl-nav {
+  display: none;
+}
+
+.gtco-testimonials .owl-dots {
+  text-align: center;
+}
+
+.gtco-testimonials .owl-dots span {
+  position: relative;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: block;
+  background: #fff;
+  border: 2px solid #01b0f8;
+  margin: 0 5px;
+}
+
+.gtco-testimonials .owl-dots .active {
+  background: #01b0f8;
+}
+
+.gtco-testimonials .card {
+  background: #fff;
+  box-shadow: 0 8px 30px -7px #c9dff0;
+  margin: 0 20px;
+  padding: 0 10px;
+  border-radius: 20px;
+  border: 0;
+}
+
+.gtco-testimonials .card .card-img-top {
+  max-width: 100px;
+  border-radius: 50%;
+  margin: 15px auto 0;
+  box-shadow: 0 8px 20px -4px #95abbb;
+  width: 100px;
+  height: 100px;
+}
+
+.gtco-testimonials .card h5 {
+  color: 
+  rgba(227, 24, 55, 1);
+  font-size: 21px;
+  line-height: 1.3;
+}
+
+.gtco-testimonials .card h5 span {
+  font-size: 18px;
+  color: #666666;
+}
+
+.gtco-testimonials .card p {
+  font-size: 13px;
+  color: #555;
+  padding-bottom: 15px;
+}
+
+.gtco-testimonials .active {
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+
+.gtco-testimonials .center {
+  opacity: 1;
+}
+
+.gtco-testimonials .center h5 {
+  font-size: 24px;
+}
+
+.gtco-testimonials .center h5 span {
+  font-size: 20px;
+}
+
+.gtco-testimonials .center .card-img-top {
+  max-width: 100%;
+  height: 120px;
+  width: 120px;
+}
+
+@media (max-width: 767px) {
+  .gtco-testimonials {
+    margin-top: 20px;
+  }
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+  outline: 0;
+}
+
+.owl-carousel button.owl-dot {
+  outline: 0;
+}
+
+.owl-carousel{
+  display: flex;
+}
+
+.owl-carousel button.owl-dot {
+  outline: 0;
+}
+
