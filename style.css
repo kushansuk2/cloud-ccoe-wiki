@@ -583,3 +583,9 @@ nav a {
   right: 10px;
 }
 
+
+a, a:hover, a:focus, a:active {
+  text-decoration: underline;
+  color: inherit;
+
+}
