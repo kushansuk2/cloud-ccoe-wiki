@@ -58,5 +58,21 @@ document.querySelector('.prev-buttonzz').addEventListener('click', () => moveSli
 document.querySelector('.next-buttonzz').addEventListener('click', () => moveSliderzz(1));
 
 
+// for activities
+
+const trackss = document.querySelector('.carousel-trackss');
+const cardsss = document.querySelectorAll('.carousel-cardss');
+const cardWidthss = cardsss[0].offsetWidth;
+let currentIndexss = 0;
+
+function moveSliderss(offset) {
+    currentIndex = (currentIndex + offset + cardsss.length) % cardsss.length;
+    const position = -currentIndex * cardWidthss;
+    trackss.style.transition = 'transform 0.5s ease-in-out';
+    trackss.style.transform = `translateX(${position}px)`;
+}
+
+document.querySelector('.prev-buttonss').addEventListener('click', () => moveSliderss(-1));
+document.querySelector('.next-buttonss').addEventListener('click', () => moveSliderss(1));
 
 // for cor testimonials
