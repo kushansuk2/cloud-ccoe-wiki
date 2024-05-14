@@ -42,20 +42,20 @@ document.getElementsByClassName('tab')[0].classList.add('active-tab');
 
 // testimonials
 
-const trackzz = document.querySelector('.carousel-trackzz');
-const cardszz = document.querySelectorAll('.carousel-cardzz');
-const cardWidthzz = cardszz[0].offsetWidth;
-let currentIndexzz = 0;
+// const trackzz = document.querySelector('.carousel-trackzz');
+// const cardszz = document.querySelectorAll('.carousel-cardzz');
+// const cardWidthzz = cardszz[0].offsetWidth;
+// let currentIndexzz = 0;
 
-function moveSliderzz(offset) {
-    currentIndex = (currentIndex + offset + cardszz.length) % cardszz.length;
-    const position = -currentIndex * cardWidthzz;
-    trackzz.style.transition = 'transform 0.5s ease-in-out';
-    trackzz.style.transform = `translateX(${position}px)`;
-}
+// function moveSliderzz(offset) {
+//     currentIndex = (currentIndex + offset + cardszz.length) % cardszz.length;
+//     const position = -currentIndex * cardWidthzz;
+//     trackzz.style.transition = 'transform 0.5s ease-in-out';
+//     trackzz.style.transform = `translateX(${position}px)`;
+// }
 
-document.querySelector('.prev-buttonzz').addEventListener('click', () => moveSliderzz(-1));
-document.querySelector('.next-buttonzz').addEventListener('click', () => moveSliderzz(1));
+// document.querySelector('.prev-buttonzz').addEventListener('click', () => moveSliderzz(-1));
+// document.querySelector('.next-buttonzz').addEventListener('click', () => moveSliderzz(1));
 
 
 // for activities
@@ -66,10 +66,10 @@ const cardWidthss = cardsss[0].offsetWidth;
 let currentIndexss = 0;
 
 function moveSliderss(offset) {
-    currentIndex = (currentIndex + offset + cardsss.length) % cardsss.length;
-    const position = -currentIndex * cardWidthss;
+    currentIndexss = (currentIndexss + offset + cardsss.length) % cardsss.length;
+    const positionss = -currentIndexss * cardWidthss;
     trackss.style.transition = 'transform 0.5s ease-in-out';
-    trackss.style.transform = `translateX(${position}px)`;
+    trackss.style.transform = `translateX(${positionss}px)`;
 }
 
 document.querySelector('.prev-buttonss').addEventListener('click', () => moveSliderss(-1));
